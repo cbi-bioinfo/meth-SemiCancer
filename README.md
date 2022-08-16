@@ -1,5 +1,6 @@
 # meth-SemiCancer: a cancer subtype classification framework via Semi-supervised learning utilizing DNA methylation profiles
 meth-SemiCancer is a semi-supervised cancer subtype classification framework using both labeled and unlabeled DNA methylation profiles. meth-SemiCancer framework was first pre-trained based on the methylation datasets with the cancer subtype labels. After pre-training, meth-SemiCancer generated the pseudo-subtypes for the cancer datasets without subtype information based on the model’s prediction. Finally, fine-tuning was performed utilizing both the labeled and unlabeled datasets.
+![cancer_subtype_classificaiton](https://user-images.githubusercontent.com/48755108/184848640-ed88ce6e-76dd-4212-8b37-8912c8b62352.png)
 
 ## Requirements
 * Tensorflow (>= 1.8.0)
@@ -29,7 +30,7 @@ cg00000236,0.917430,0.881644,...,0.908840
 ```
 
 2. Use **"run_preproc.sh"** to perform preprocessing.
-3. You will get outputs "train_X", "train_Y", "test_X", "test_Y", "ul_X", "ul_Y".
+3. You will get outputs **"train_X", "train_Y", "test_X", "test_Y", "ul_X", "ul_Y"**.
 
 ## Semi-supervised cancer subtype classification
 * Reference: ./meth_SemiCancer/
