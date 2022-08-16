@@ -12,13 +12,14 @@ Clone the repository or download source code files.
 
 ## Preprocessing
 * Reference: ./preprocessing/
-1. Edit **"run_preproc.sh"** file having DNA methylation beta value dataset files and cancer subtype file. Modify each variable values in the bash file with filename for your own dataset. Cancer subtype file for labeled dataset should contain cancer subtype annotation for each sample, where each row represent sample. Example for data format is described below.
+1. Edit **"run_preproc.sh"** file having DNA methylation beta value dataset files and cancer subtype file. Modify each variable values in the bash file with filename for your own dataset. Cancer subtype file for labeled dataset should contain cancer subtype annotation for each sample, where each row and column represent **sample ID** and **cancer_subtype**, respectively. Example for data format is described below.
 ```
-Cancer_subtype
-LumA
-LumB
-Her2
+sample,cancer_subtype
+sample_1,LumA
+sample_2,LumB
+sample_3,Her2
 ...
+sample_n,LumA
 ```
 Each DNA methylation file for labeled and unlabeled datasets should contain matrix of DNA methylation beta value, where each row and column represent **CpG site** and **sample ID**, respectively :
 ```
