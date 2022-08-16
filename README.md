@@ -12,9 +12,9 @@ Clone the repository or download source code files.
 
 ## Preprocessing
 * Reference: ./preprocessing/
-1. Edit **"run_preproc.sh"** file having DNA methylation beta value dataset files and cancer subtype file. Modify each variable values in the bash file with filename for your own dataset. Cancer subtype file for labeled dataset should contain cancer subtype annotation for each sample, where each row and column represent **sample ID** and **cancer_subtype**, respectively. Example for data format is described below.
+1. Edit **"run_preproc.sh"** file having DNA methylation beta value dataset files and cancer subtype file. Modify each variable values in the bash file with filename for your own dataset. Cancer subtype file for labeled dataset should contain cancer subtype annotation for each sample, where each row and column represent **sample ID** and **cancer subtype**, respectively. Example for data format is described below.
 ```
-sample,cancer_subtype
+sample_ID,cancer_subtype
 sample_1,LumA
 sample_2,LumB
 sample_3,Her2
@@ -31,7 +31,7 @@ cg00000236,0.917430,0.881644,...,0.908840
 ```
 
 2. Use **"run_preproc.sh"** to perform preprocessing.
-3. You will get outputs **"train_X", "train_Y", "test_X", "test_Y", "ul_X", "ul_Y"**.
+3. You will get outputs **"train_X", "train_Y", "test_X", "test_Y", "unlabel_X", "ulabel_Y"**.
 
 ## Semi-supervised cancer subtype classification
 * Reference: ./meth_SemiCancer/
