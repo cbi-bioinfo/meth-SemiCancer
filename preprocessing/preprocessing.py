@@ -50,10 +50,10 @@ unlabeled_Y_onehot = pd.get_dummies(unlabeled_Y)
 train_X, test_X, train_Y, test_Y = train_test_split(common_labeled_X, labeled_Y_onehot, test_size=0.1, shuffle=True, random_state=34)
 
 # Saving dataset
-train_X.to_csv("./train_X", sep=',', index=False)
-test_X.to_csv("./test_X", sep=',', index=False)
-train_Y.to_csv("./train_Y", sep=',', index=False)
-test_Y.to_csv("./test_Y", sep=',', index=False)
-common_unlabeled_X.to_csv("./unlabel_X", sep=',', index=False)
-unlabeled_Y_onehot.to_csv("./unlabel_Y", sep=',', index=False)
+train_X.to_csv("./train_X.csv", sep=',', index=False)
+test_X.to_csv("./test_X.csv", sep=',', index=False)
+train_Y.to_csv("./train_Y.csv", sep=',', index=False)
+test_Y.to_csv("./test_Y.csv", sep=',', index=False)
+common_unlabeled_X.to_csv("./unlabel_X.csv", sep=',', index=False)
+unlabeled_Y_onehot.to_csv("./unlabel_Y.csv", sep=',', index=False)
 
