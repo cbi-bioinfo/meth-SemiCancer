@@ -31,7 +31,7 @@ cg00000236,0.917430,0.881644,...,0.908840
 ```
 
 2. Use **"run_preproc.sh"** to perform preprocessing.
-3. You will get outputs **"train_X", "train_Y", "test_X", "test_Y", "unlabel_X", "ulabel_Y"**.
+3. You will get outputs **"train_X.csv", "train_Y.csv", "test_X.csv", "test_Y.csv", "unlabel_X.csv", "unlabel_Y.csv"**.
 
 ## Semi-supervised cancer subtype classification
 * Reference: ./meth_SemiCancer/
@@ -39,4 +39,4 @@ cg00000236,0.917430,0.881644,...,0.908840
 2. You can get the final output **"result_for_test_dataset.csv"** with classified cancer subtypes for test dataset.
 
 ## Contact
-If you have any question or problem, please send an email to miniymay@sookmyung.ac.kr
+If you have any question or problem, please send an email to joungmin@vt.edu
